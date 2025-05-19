@@ -97,7 +97,7 @@ footer .creditos a:hover {
   }
 }
 
-.btn-changelog {
+.btn-special {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -109,6 +109,6 @@ footer .creditos a:hover {
   transition: background-color 0.3s;
 }
 
-.btn-changelog:hover {
+.btn-special:hover {
   background-color: #007acc;
 }
