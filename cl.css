@@ -1,50 +1,87 @@
-body {
+/* RESET */
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #e6faff;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
 header {
-  background-color: #00b7ff;
+  background-color: #0d47a1;
   color: white;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
   position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2rem;
 }
 
 .volver {
   position: absolute;
   top: 20px;
   left: 20px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
+.volver:hover {
+  color: #80dfff;
+}
+
+/* CONTENIDO */
 main {
-  padding: 30px;
+  padding: 40px 20px;
   max-width: 900px;
   margin: auto;
 }
 
+/* LOGS */
 .changelog {
   background: #ffffff;
-  border-left: 5px solid #00b7ff;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-left: 5px solid #1e88e5;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.changelog:hover {
+  transform: translateY(-2px);
 }
 
 .changelog h3 {
-  margin-top: 0;
-  color: #00b7ff;
+  color: #0d47a1;
+  margin-bottom: 10px;
 }
 
+.changelog ul {
+  padding-left: 20px;
+}
+
+.changelog li {
+  margin-bottom: 6px;
+}
+
+/* FOOTER */
 footer {
   background-color: #0f4c75;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 3px solid #1e90ff;
 }
