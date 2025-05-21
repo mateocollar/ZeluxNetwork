@@ -29,14 +29,12 @@ const logs = [
 
 const main = document.getElementById("logs");
 
-logs.forEach(log => {
+logs.forEach(({ version, fecha, cambios }) => {
   const div = document.createElement("div");
   div.className = "changelog";
   div.innerHTML = `
-    <h3>${log.version} - ${log.fecha}</h3>
-    <ul>
-      ${log.cambios.map(c => `<li>${c}</li>`).join("")}
-    </ul>
+    <h3>${version} - ${fecha}</h3>
+    <ul>${cambios.map(c => `<li>${c}</li>`).join("")}</ul>
   `;
   main.appendChild(div);
 });
