@@ -1,52 +1,96 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #e0f7fa;
+/* RESET */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
 header {
   background-color: #00796b;
   color: white;
-  padding: 1rem;
+  padding: 25px 20px;
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 12px;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
+nav a:hover {
+  color: #80cbc4;
+}
+
+/* CONTENIDO */
 main {
-  padding: 2rem;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
+/* ANUNCIOS */
 .anuncio {
   background: #ffffff;
-  border: 2px solid #4db6ac;
-  margin-bottom: 1rem;
+  border-left: 6px solid #009688;
+  margin-bottom: 25px;
   border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   overflow: hidden;
-  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .anuncio h2 {
   margin: 0;
-  padding: 1rem;
-  background: #4db6ac;
+  padding: 18px 20px;
+  background: #26a69a;
   color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.anuncio h2:hover {
+  background: #00796b;
 }
 
 .anuncio .contenido {
-  padding: 1rem;
+  padding: 20px;
   display: none;
+  background-color: #f1fefb;
 }
 
+/* FOOTER */
 footer {
-  text-align: center;
-  padding: 1rem;
   background: #004d40;
   color: white;
+  text-align: center;
+  padding: 20px;
   font-size: 0.9rem;
+}
+
+footer a {
+  color: #80cbc4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
